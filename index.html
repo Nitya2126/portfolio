@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nitya - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    
+
+  <!-- Background Video -->
+  
+
+  <!-- Nav Content -->
+  
+
+
+
+
+    </div>
+    
+  </div>
+
+</nav>
+
+
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+    <style>
+        .hero-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            z-index: 0;
+            background-color: #fffefe; /* fallback dark background */
+        }
+
+        .background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5); /* dark overlay effect */
+    z-index: -1;
+}
+
+    </style>
+
+    <video class="background-video" autoplay muted loop playsinline
+     style="position: absolute; top: 0; left: 0; width: 100%; height: 111%; object-fit: cover; z-index: 0;">
+        <source src="videos/bg.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+
+
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text" style="padding-left: 100px;">
+    <h1 class="hero-title">
+        Welcome , <span class="gradient-text">to my space</span>
+    </h1>
+    <p class="section-subtitle" style="color: rgb(234, 205, 39);">
+  This is where technology gets purposeful, and built to make an impact
+</p>
+
+    <p class="hero-subtitle"></p>
+    <p class="hero-description">
+        Every project I create starts with a spark a curious thought, a shared idea, and a lot of heart. I aim to turn those sparks into tools that truly help people, make a difference, and stay useful for years to come. For me, it’s not just about building technology it’s about building something that matters.
+    </p>
+</div>
+
+                <div class="hero-buttons">
+                    <div class="hero-text" style="padding-left: 70px;"></div>
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                </div>
+            </div>
+            
+    </section>
+
+    <!-- About Section -->
+    <!-- About Section -->
+<section id="about" class="about">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Nitya here!</h2>
+            <p class="section-subtitle">Ideas are my dataset, the future is my output</p>
+        </div>
+
+        
+            <!-- Text Content -->
+            
+               <style>
+    .about-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px;
+        font-family: 'Inter', sans-serif;
+        background: #f0f4f8;
+    }
+
+    .about-card {
+        background: linear-gradient(145deg, #ffffff, #e6e6e6);
+        border-radius: 20px;
+        padding: 30px;
+        max-width: 800px;
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+        transform: perspective(1000px) rotateX(1deg);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .about-card:hover {
+        transform: perspective(1000px) rotateX(0deg) translateY(-5px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    }
+
+    .about-description {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: #333;
+        margin-bottom: 30px;
+    }
+
+    .about-highlights {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .highlight-item {
+        background: #ffffff;
+        border-radius: 15px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        flex: 1 1 250px;
+        min-width: 250px;
+        transition: transform 0.3s;
+    }
+
+    .highlight-item:hover {
+        transform: translateY(-8px);
+    }
+
+    .highlight-item h3 {
+        margin-bottom: 10px;
+        font-size: 1.2rem;
+        color: #222;
+    }
+
+    .highlight-item p {
+        color: #555;
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+</style>
+
+<style>
+    .about-section {
+    display: flex;
+    justify-content: flex-start; /* ⬅ Align content to left */
+    padding: 40px 20px;
+    font-family: 'Inter', sans-serif;
+    background: #f0f4f8;
+}
+
+
+    .flip-card {
+        width: 100%;
+        max-width: 800px;
+        perspective: 1500px;
+    }
+
+    .flip-card-inner {
+        position: relative;
+        width: 100%;
+        transform-style: preserve-3d;
+        transition: transform 1s ease;
+        animation: flipAnimation 6s infinite;
+    }
+
+    .flip-card-front, .flip-card-back {
+        position: absolute;
+        width: 100%;
+        backface-visibility: hidden;
+        border-radius: 20px;
+        padding: 30px;
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    .flip-card-front {
+        background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    }
+
+    .flip-card-back {
+        background: linear-gradient(145deg, #ffffff, #f5f5f5);
+        transform: rotateY(180deg);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .about-description {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: #333;
+        margin-bottom: 30px;
+    }
+
+    .about-highlights {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .highlight-item {
+        background: #ffffff;
+        border-radius: 15px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        flex: 1 1 250px;
+        min-width: 250px;
+    }
+
+    .highlight-item h3 {
+        margin-bottom: 10px;
+        font-size: 1.2rem;
+        color: #222;
+    }
+
+    .highlight-item p {
+        color: #555;
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+    .about-stats {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .stat-item {
+        text-align: center;
+    }
+
+    .stat-number {
+        font-size: 32px;
+        font-weight: bold;
+        color: #2a2a2a;
+    }
+
+    .stat-label {
+        font-size: 1rem;
+        color: #555;
+    }
+
+    .flip-card-inner {
+    animation: flipToBack 1s ease-in-out 1 5s forwards,
+               flipToFront 1s ease-in-out 1 7s forwards;
+}
+
+
+
+</style>
+
+
+    <style>
+    .flip-card {
+        width: 100%;
+        max-width: 800px;
+        perspective: 1500px;
+        margin: auto;
+    }
+
+    .flip-card-inner {
+        position: relative;
+        width: 100%;
+        transform-style: preserve-3d;
+        transition: transform 1s ease;
+    }
+
+    .flip-card-front, .flip-card-back {
+        position: absolute;
+        width: 100%;
+        backface-visibility: hidden;
+        border-radius: 20px;
+        padding: 30px;
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    .flip-card-front {
+        background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    }
+
+    .flip-card-back {
+        background: linear-gradient(145deg, #ffffff, #f5f5f5);
+        transform: rotateY(180deg);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .flip-card.flipped .flip-card-inner {
+        transform: rotateY(180deg);
+    }
+
+    .about-description {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: #333;
+        margin-bottom: 30px;
+    }
+
+    .about-highlights {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .highlight-item {
+        background: #ffffff;
+        border-radius: 15px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        flex: 1 1 250px;
+        min-width: 250px;
+    }
+
+    .highlight-item h3 {
+        margin-bottom: 10px;
+        font-size: 1.2rem;
+        color: #222;
+    }
+
+    .highlight-item p {
+        color: #555;
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+    .about-stats {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .stat-item {
+        text-align: center;
+    }
+
+    .stat-number {
+        font-size: 32px;
+        font-weight: bold;
+        color: #2a2a2a;
+    }
+
+    .stat-label {
+        font-size: 1rem;
+        color: #555;
+    }
+</style>
+
+<!-- HTML -->
+<div class="flip-card" id="aboutCard">
+    <div class="flip-card-inner" id="cardInner">
+        <!-- FRONT -->
+        <div class="flip-card-front">
+            <p class="about-description">
+                For me, technology isn’t just code and algorithms it’s a way to solve problems that truly matter.
+From my prestigious research internship in Taiwan, where I designed Digital Twin models to strengthen disaster management systems, to my current work as an AI/ML Intern at Inora Labs developing intelligent, adaptive solutions my journey has been about pushing boundaries and blending innovation with real-world impact.
+            </p>
+            <div class="about-highlights">
+                <div class="highlight-item">
+                    <h3>🎓 Beyond the Code </h3>
+                    <p>Public Speaking & Workshops — Sharing AI knowledge with peers and communities
+
+Hackathons & Competitions — Solving problems under pressure, building fast prototypes
+
+Collaboration — Working with global teams on impactful tech projects
+
+</p>
+                </div>
+                <div class="highlight-item">
+                    <h3>🔬 The Spark Moment</h3>
+                    <p>First Breakthrough — Developed my first AI model that solved a real-world problem
+
+Global Leap — Taiwan research internship in Digital Twin & AI for disaster management
+
+Ongoing Challenge — Creating AI/ML solutions at Inora Labs</p>
+                </div>
+                <div class="highlight-item">
+                    <h3>💼 Current Mission</h3>
+                    <p>Learning — Mastering advanced AI architectures & generative models
+
+Building — AI tools that solve real human problems
+
+Exploring — Cross-domain innovation from disaster management to creative AI</p>
+                </div>
+            </div>
+        </div>
+<style>
+    .slideshow {
+        width: 625px;
+        height: 463px;
+        position: relative;
+        left: 750px;
+        margin: auto;
+        overflow: hidden;
+        border-radius: 16px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25),
+                    0 4px 10px rgba(0, 0, 0, 0.15);
+        background: #fff;
+    }
+
+    .slide {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+
+    .slide.active {
+        display: block;
+        opacity: 1;
+        z-index: 1;
+    }
+
+    .nav-button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: none;
+        border: none;
+        color: rgba(214, 212, 212, 0.518);
+        font-size: 40px;
+        cursor: pointer;
+        z-index: 2;
+        padding: 0 15px;
+        user-select: none;
+    }
+
+    .nav-button:hover {
+        color: rgba(0, 0, 0, 0.9);
+    }
+
+    .prev {
+        left: 0;
+    }
+
+    .next {
+        right: 0;
+    }
+</style>
+
+<div class="slideshow">
+    <button class="nav-button prev">&#10094;</button>
+    <button class="nav-button next">&#10095;</button>
+
+    <!-- Gallery images -->
+    <img src="gallery/1.jpg" class="slide active" alt="Slide 1">
+    <img src="gallery/2.jpg" class="slide" alt="Slide 2">
+    <img src="gallery/3.jpg" class="slide" alt="Slide 3">
+    <img src="gallery/4.jpg" class="slide" alt="Slide 4">
+    <img src="gallery/5.jpg" class="slide" alt="Slide 5">
+    <img src="gallery/6.jpg" class="slide" alt="Slide 6">
+    <!-- Add more if needed -->
+</div>
+
+<script>
+    let slideIndex = 0;
+    const slides = document.querySelectorAll('.slide');
+    const prevBtn = document.querySelector('.prev');
+    const nextBtn = document.querySelector('.next');
+
+    function showSlide(index) {
+        slides.forEach(slide => slide.classList.remove('active'));
+        slides[index].classList.add('active');
+    }
+
+    function nextSlide() {
+        slideIndex = (slideIndex + 1) % slides.length;
+        showSlide(slideIndex);
+    }
+
+    function prevSlide() {
+        slideIndex = (slideIndex - 1 + slides.length) % slides.length;
+        showSlide(slideIndex);
+    }
+
+    // Manual navigation
+    nextBtn.addEventListener('click', () => {
+        nextSlide();
+        resetTimer();
+    });
+    prevBtn.addEventListener('click', () => {
+        prevSlide();
+        resetTimer();
+    });
+
+    // Auto slideshow every 2 sec
+    let timer = setInterval(nextSlide, 2000);
+
+    function resetTimer() {
+        clearInterval(timer);
+        timer = setInterval(nextSlide, 2000);
+    }
+</script>
+
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats Content -->
+             <style>
+  .flip-card {
+    margin-top: -20px;
+    width: 70%;
+    max-width: 800px;
+    perspective: 1500px;
+    margin-left: -150px;  /* Align left */
+    margin-right: auto;
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    transform-style: preserve-3d;
+    transition: transform 1s ease;
+  }
+
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    backface-visibility: hidden;
+  }
+
+  .flip-card-back {
+    transform: rotateY(180deg);
+  }
+</style>
+            
+                   
+    <div style="height: 10px;"></div>
+
+</section>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Innovative solutions with real-world impact</p>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+    <div class="project-video">
+        <video width="100%" height="auto" controls autoplay muted loop>
+            <source src="videos/1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="project-content">
+        <h3 class="project-title">Digital Twin for Disaster Management</h3>
+        <p class="project-description">
+            Advanced digital twin design with scenario planning for city disaster management, 
+            utilizing satellite imagery and AI for typhoon prediction and urban resilience.
+        </p>
+        <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">AI/ML</span>
+            <span class="tech-tag">Digital Twin</span>
+            <span class="tech-tag">Satellite Data</span>
+        </div>
+    </div>
+</div>
+
+
+
+                <!-- Project 2 -->
+                <div class="project-card">
+    <div class="project-video">
+        <video src="videos/6.mp4" autoplay loop muted playsinline style="width: 100%; border-radius: 8px;">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="project-content">
+        <h3 class="project-title">AI-based Agricultural Drone</h3>
+        <p class="project-description">
+            Autonomous drone system integrating AI algorithms and geo-referencing technology
+            for precision pesticide dispensing and crop protection optimization.
+        </p>
+        <div class="project-tech">
+            <span class="tech-tag">IoT</span>
+            <span class="tech-tag">Machine Learning</span>
+            <span class="tech-tag">Drone Tech</span>
+            <span class="tech-tag">Agriculture</span>
+        </div>
+    </div>
+</div>
+
+
+                <!-- Project 3 -->
+                <div class="project-card" style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 20px; margin-bottom: 40px;">
+    <div class="project-video" style="flex: 1 1 300px; max-width: 400px; overflow: hidden;">
+        <video 
+            src="videos/3.mp4?v=2" 
+            autoplay 
+            muted 
+            loop 
+            playsinline 
+            ontimeupdate="if(this.duration - this.currentTime <= 10) this.currentTime = 0;"
+            style="transform: scale(1.26); transform-origin: center; width: 100%; height: auto; border-radius: 12px; object-fit: cover; display: block;">
+        </video>
+    </div>
+    <div class="project-content" style="flex: 2 1 500px;">
+        <h3 class="project-title" style="margin-top: 0;">KHETSAT - Smart Farming Platform</h3>
+        <p class="project-description">
+            All-in-one platform for farmers with IoT-integrated systems and machine learning capabilities 
+            for crop yield prediction, soil health analysis, and intelligent agricultural decision-making.
+        </p>
+        <div class="project-tech" style="margin-top: 10px;">
+            <span class="tech-tag" style="display: inline-block; background: #f3f4f6; padding: 6px 12px; border-radius: 8px; margin-right: 8px;">Web Development</span>
+            <span class="tech-tag" style="display: inline-block; background: #f3f4f6; padding: 6px 12px; border-radius: 8px; margin-right: 8px;">IoT</span>
+            <span class="tech-tag" style="display: inline-block; background: #f3f4f6; padding: 6px 12px; border-radius: 8px; margin-right: 8px;">ML</span>
+            <span class="tech-tag" style="display: inline-block; background: #f3f4f6; padding: 6px 12px; border-radius: 8px;">Agriculture</span>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+                <!-- Project 4 -->
+                <div class="project-card">
+    <div class="project-video video-box">
+        <video id="trimmedVideo" autoplay muted playsinline width="100%" height="auto">
+            <source src="videos/4.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="project-content">
+        <h3 class="project-title">Accident Detection & Alert System</h3>
+        <p class="project-description">
+            Smart accident detection system using Arduino, Raspberry Pi, ESP32, and drone 
+            technology for real-time incident recognition and emergency notification.
+        </p>
+        <div class="project-tech">
+            <span class="tech-tag">Arduino</span>
+            <span class="tech-tag">Raspberry Pi</span>
+            <span class="tech-tag">Computer Vision</span>
+            <span class="tech-tag">IoT</span>
+        </div>
+    </div>
+</div>
+
+<script>
+    const video = document.getElementById('trimmedVideo');
+
+    video.addEventListener('loadedmetadata', () => {
+        const trimFromEnd = 10; // seconds
+        const maxDuration = video.duration - trimFromEnd;
+
+        video.addEventListener('timeupdate', () => {
+            if (video.currentTime >= maxDuration) {
+                video.currentTime = 0; // rewind to start
+            }
+        });
+    });
+</script>
+
+<style>
+.project-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.project-video {
+    flex: 1 1 300px;
+    max-width: 400px;
+}
+
+.project-content {
+    flex: 2 1 400px;
+}
+
+.project-title {
+    font-size: 1.5rem;
+    margin: 0 0 10px;
+}
+
+.project-description {
+    margin: 0 0 10px;
+    font-size: 1rem;
+}
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tech-tag {
+    background-color: #eee;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+</style>
+
+
+
+
+                <!-- Project 5 -->
+                <div class="project-card">
+    <div class="project-video">
+        <video width="100%" height="auto" autoplay muted loop playsinline>
+            <source src="videos/5.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="project-content">
+        <h3 class="project-title">Drowsiness Detection System</h3>
+        <p class="project-description">
+            Sleep sensing and alerting system for drivers using Raspberry Pi, OpenCV, 
+            and Pi camera module to track facial conditions and prevent accidents.
+        </p>
+        <div class="project-tech">
+            <span class="tech-tag">OpenCV</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Computer Vision</span>
+            <span class="tech-tag">Safety</span>
+        </div>
+    </div>
+</div>
+
+
+
+                <!-- Project 6 -->
+                <div class="project-card">
+    <div class="project-video">
+        <video width="125%" height="auto" autoplay muted loop playsinline>
+            <source src="videos/7.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="project-content">
+        <h3 class="project-title">Interactive Data Visualization Dashboard</h3>
+        <p class="project-description">
+             A responsive sales dashboard built with HTML, CSS, and JavaScript that displays 
+            real-time sales performance, tracks product-wise revenue, highlights top-selling 
+            items, and visualizes trends with interactive charts and filters for efficient 
+            business analysis.
+        </p>
+        <div class="project-tech">
+            <span class="tech-tag">OpenCV</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Computer Vision</span>
+            <span class="tech-tag">Safety</span>
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+    </section>
+
+<section class="webdev-showcase">
+  <div>
+    <div>
+      <div>
+        <h2 style="margin-left: 130px;">Documents</h2>
+        <div class="pdf-preview-container">
+
+          <!-- Internship Certificate -->
+          <a href="pdf/nccucert.pdf" target="_blank" class="pdf-preview-box" title="View Internship Certificate">
+            <img src="https://cdn-icons-png.flaticon.com/512/337/337946.png" alt="Internship Certificate PDF" />
+            <p>NCCU Internship Certificate</p>
+          </a>
+
+          <!-- Inora Labs Internship Certificate -->
+          <a href="pdf/inoracert.pdf" target="_blank" class="pdf-preview-box" title="View Inora Labs Certificate">
+            <img src="https://cdn-icons-png.flaticon.com/512/337/337946.png" alt="Inora Labs Certificate PDF" />
+            <p>Inora Labs Certificate</p>
+          </a>
+
+          <!-- Offer Letter (Machine Learning Engineer) -->
+          <a href="pdf/inoraoffer.pdf" target="_blank" class="pdf-preview-box" title="View Offer Letter">
+            <img src="https://cdn-icons-png.flaticon.com/512/337/337946.png" alt="Offer Letter PDF" />
+            <p>Inora Labs Offer Letter</p>
+          </a>
+
+          <!-- Letter of Recommendation -->
+          <a href="pdf/Paosirlor.pdf" target="_blank" class="pdf-preview-box" title="View Letter of Recommendation">
+            <img src="https://cdn-icons-png.flaticon.com/512/337/337946.png" alt="Letter of Recommendation PDF" />
+            <p>Pao ann Hsiung Letter of Recommendation</p>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+    
+  .pdf-preview-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 15px;
+     /* Shift to the right */
+    justify-content: flex-start; /* controls horizontal alignment */
+    margin-left: 150px; /* adjust value for more/less right shift */
+  }
+  .pdf-preview-box {
+    width: 160px;
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: #333;
+    background: #fff;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+  }
+  .pdf-preview-box:hover {
+    border-color: #007bff;
+    box-shadow: 0 5px 18px rgba(0,123,255,0.3);
+    transform: translateY(-3px);
+  }
+  .pdf-preview-box img {
+    width: 65px;
+    height: 85px;
+    margin-bottom: 10px;
+    object-fit: contain;
+  }
+  .pdf-preview-box p {
+    font-weight: 600;
+    font-size: 14px;
+    margin: 0;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+<section style="padding: 60px 0; background: linear-gradient(135deg, #1e2a78, #3a50a0); color: #eef2ff; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+  <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+
+    <h2 style="font-size: 2.8rem; font-weight: 800; letter-spacing: 2px; margin-bottom: 15px; position: relative; display: inline-block;">
+      Tools, <span style="color: #f0a500; position: relative; z-index: 1;">My Buddies!</span>
+      <span style="position: absolute; left: 0; bottom: 0; height: 6px; width: 100%; background: #f0a500; opacity: 0.3; border-radius: 10px; z-index: 0; transform: skewX(-20deg);"></span>
+    </h2>
+
+    <p style="font-size: 1.15rem; font-weight: 500; max-width: 550px; margin: 0 auto 40px; line-height: 1.5; color: #d7dff5;">
+      The secret sauce behind every successful project? The right tools. These are my trusted allies — each carefully chosen to turn ideas into impact.
+    </p>
+
+    <!-- Tool categories as interactive-looking chips -->
+    <div style="display: inline-flex; gap: 15px; flex-wrap: wrap; justify-content: center; margin-bottom: 50px;">
+      <span style="background: #f0a500; color: #1e2a78; padding: 8px 20px; border-radius: 50px; font-weight: 600; font-size: 0.9rem; cursor: default; user-select: none; box-shadow: 0 2px 8px rgba(240, 165, 0, 0.4);">
+        AI & ML
+      </span>
+      <span style="background: #3a50a0; color: #eef2ff; border: 2px solid #f0a500; padding: 8px 20px; border-radius: 50px; font-weight: 600; font-size: 0.9rem; cursor: default; user-select: none; box-shadow: 0 2px 8px rgba(58, 80, 160, 0.4);">
+        Web Dev
+      </span>
+      <span style="background: #f0a500; color: #1e2a78; padding: 8px 20px; border-radius: 50px; font-weight: 600; font-size: 0.9rem; cursor: default; user-select: none; box-shadow: 0 2px 8px rgba(240, 165, 0, 0.4);">
+        Cloud & DevOps
+      </span>
+    </div>
+
+    <!-- Tools Slider -->
+    <div class="tools-slider" style="padding: 10px 0;">
+      <div class="tools-track">
+        <!-- Icons repeated twice for smooth loop -->
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="PyTorch" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
+
+        <!-- Repeat again for infinite scroll -->
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="PyTorch" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
+      </div>
+    </div>
+
+    <p style="margin-top: 60px; font-size: 1rem; font-style: italic; font-weight: 600; letter-spacing: 0.03em; color: #f0a500;">
+     
+    </p>
+  </div>
+</section>
+
+<style>
+.tools-slider {
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+  width: 100%;
+  background: transparent;
+  box-sizing: border-box;
+}
+
+.tools-track {
+  display: flex;
+  width: max-content;
+  animation: scrollLeft 40s linear infinite;
+  will-change: transform;
+}
+
+.tools-track img {
+  height: 60px;
+  margin: 0 25px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.tools-track img:hover {
+  transform: scale(1.2);
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-50%));
+  }
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- CSS Styles -->
+<style>
+.webdev-showcase {
+  margin-top: -80px;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #f9fafb, #ffffff);
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  font-family: 'Inter', sans-serif;
+}
+
+/* Side-by-side layout */
+.webdev-row {
+  margin-top: -40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+/* Text */
+.webdev-text {
+  flex: 1 1 400px;
+  max-width: 600px;
+}
+
+.webdev-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #111827;
+  margin-bottom: 16px;
+}
+
+.webdev-line {
+  font-size: 16px;
+  color: #374151;
+  margin-bottom: 10px;
+}
+
+/* Lottie */
+.lottie-box {
+  flex: 1 1 300px;
+  max-width: 300px;
+  height: 200px;
+  margin: auto;
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Video */
+.webdev-video {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  animation: zoomIn 1.2s ease-in-out;
+}
+
+.webdev-video video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 20px;
+}
+
+/* Animations */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.9); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .webdev-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .webdev-text {
+    text-align: center;
+  }
+
+  .lottie-box {
+    margin-top: 20px;
+  }
+}
+</style>
+
+<!-- Lottie Init Script -->
+<script>
+  lottie.loadAnimation({
+    container: document.getElementById('lottie-animation'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'lottie/2.json' // Make sure this path is correct
+  });
+</script>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's collaborate on innovative projects</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>raj.nitya2001@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91-7078277728</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Bangalore, India</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form class="form">
+                        <div class="form-group">
+                            <input type="text" class="form-input" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-input" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-input" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Nitya. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
